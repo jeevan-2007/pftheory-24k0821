@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 void readValues(int arr[], int count) {
@@ -46,6 +47,7 @@ int main() {
     int arr[count], max = -1;
 
     readValues(arr, count);
+    printf("=========== Horizontal Histogram ============\n");
     printHorizontalHistogram(arr, count);
     max = findMaxValue(arr, count);
     printf("%d\n", max);
